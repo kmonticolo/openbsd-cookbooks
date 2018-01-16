@@ -52,7 +52,7 @@
     lineinfile:
       dest=/etc/pkg.conf
       backup=yes
-      line="{{ pkg_path }}"
+      line="{{ mirror }}"
       state=present
       create=True
     become_method: doas
